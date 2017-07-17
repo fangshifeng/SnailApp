@@ -1,0 +1,30 @@
+{
+  "name": "SnailApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "events": "^1.1.1",
+    "flux": "^3.1.2",
+    "immutable": "^3.8.1",
+    "keymirror": "^0.1.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-native-router-flux": "^3.40.1",
+    "realm": "^1.8.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
