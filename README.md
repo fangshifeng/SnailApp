@@ -4,7 +4,7 @@
 项目使用的开发语言：
 使用ReactNative框架+Android原生+IOS原生（JS+JSX+Android+IOS）
 ### 二、项目结构
-![屏幕快照 2017-07-17 下午2.39.17](media/14992194586112/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-17%20%E4%B8%8B%E5%8D%882.39.17.png)
+![image](https://github.com/fangshifeng/SnailApp/.github/snail_app_directory.png)
 
 #### 结构解析：
 #### 1、components
