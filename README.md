@@ -61,7 +61,20 @@ npm install underscore
 （3）功能：函数编程助手，内含大量的工具方法
 
 #### 4、教程链接
+(1) SnailApp项目---路由框架搭建 
+http://blog.csdn.net/fsf_snail/article/details/76368381
 
+(2) SnailApp项目---网络请求封装
+http://blog.csdn.net/fsf_snail/article/details/76368549
+
+(3) SnailApp---数据流的控制（一）
+http://blog.csdn.net/fsf_snail/article/details/76368664
+
+(4) SnailApp---数据流的控制（二）
+http://blog.csdn.net/fsf_snail/article/details/76368892
+
+(5) SnailApp---数据流的控制（三）
+http://blog.csdn.net/fsf_snail/article/details/76368933
 
 
 
