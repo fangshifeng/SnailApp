@@ -8,9 +8,11 @@ import { Platform } from 'react-native'
 import { Scene, Router, Modal } from'react-native-router-flux'
 import Login from './components/scene/user/Login'
 import Home from './components/scene/Home'
-import { dispatch } from './components/dispatcher/DispatcherUtil'
+import { dispatch } from './components/dispatcher/DispatcherUtils'
 import RealmStore from './components/stores/RealmStore'
 import ActionTypes from './components/constants/ActionTypes'
+
+import ClockTick from './components/scene/basic/ClockTick'
 
 // define this based on the styles/dimensions you use
 const getSceneStyle = (/* NavigationSceneRendererProps */ props, computedProps) => {
@@ -30,7 +32,7 @@ const getSceneStyle = (/* NavigationSceneRendererProps */ props, computedProps) 
 }
 
 export default class App extends Component {
-    loginFlag: false
+    loginFlag: true
 
     constructor(props) {
         super(props);
@@ -51,8 +53,9 @@ export default class App extends Component {
             <Router getSceneStyle={getSceneStyle}>
                 <Scene key="modal" component={Modal}>
                     <Scene key="root" hideNavBar hideTabBar navigationBarStyle={{ backgroundColor:'#ffffff' }} titleStyle={{color:'#333333'}}>
-                        <Scene key="login" component={Login} initial={!this.loginFlag} hideNavBar={true} />
-                        <Scene key="home" initial={this.loginFlag} hideNavBar component={Home} title="首页"/>
+                        <Scene key="login" hideNavBar component={Login} title="登录"/>
+                        <Scene key="home" hideNavBar component={Home} title="首页"/>
+                        <Scene key="clockTick" initial={true} hideNavBar={false} component={ClockTick} title="ClockTick"/>
                     </Scene>
                 </Scene>
             </Router>

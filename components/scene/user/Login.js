@@ -8,7 +8,7 @@ import React, {Component} from 'react'
 import {View, Text, TextInput, TouchableOpacity, Image} from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import * as SnailApi from '../../api/SnailApi'
-import { register } from '../../dispatcher/DispatcherUtil'
+import { register } from '../../dispatcher/DispatcherUtils'
 
 export default class Login extends Component {
 
@@ -40,7 +40,9 @@ export default class Login extends Component {
     }
 
     _doLogin() {
-        SnailApi.doUserLogin(this.state)
+        // 由于没有接口API，所以直接跳转Home页面
+        Actions.home()
+        // SnailApi.doUserLogin(this.state)
     }
 
     render() {

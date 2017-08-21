@@ -10,7 +10,25 @@ import {
     View
 } from 'react-native';
 
+const name = <Text>蜗牛慢慢跑</Text>;
 export default class SnailApp extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            date: new Date()
+        };
+    }
+
+    componentDidMount() {
+
+    }
+
+    componentWillUnmount() {
+
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -20,9 +38,7 @@ export default class SnailApp extends Component {
                 <Text style={styles.instructions}>
                     Welcome to SnailApp!
                 </Text>
-                <Text style={styles.instructions}>
-                    蜗牛慢慢跑
-                </Text>
+                {name}
             </View>
         );
     }
